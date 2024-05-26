@@ -1,0 +1,36 @@
+// config.json
+{
+  "prefix": "!",
+  "commands": {
+    "kick": true,
+    "ban": true,
+    "mute": true,
+    "warn": true,
+    "clear": true
+  },
+  "autoModeration": {
+    "wordFilter": true,
+    "spamDetection": true,
+    "antiRaidProtection": true
+  },
+  "logging": {
+    "enabled": true,
+    "logFile": "logs.txt"
+  },
+  "roleAssignment": {
+    "enabled": true,
+    "criteria": {
+      "newMember": {
+        "roles": ["Member"],
+        "minAge": 30
+      }
+    }
+  },
+  "externalServices": {
+    "MEE6": true,
+    "Dyno": true
+  },
+  "dashboard": {
+    "enabled": true
+  }
+}
