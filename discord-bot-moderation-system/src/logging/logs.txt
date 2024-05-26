@@ -1,0 +1,16 @@
+// logs.txt
+
+const fs = require('fs');
+
+const logMessage = (message) => {
+  const timestamp = new Date().toISOString();
+  const log = `${timestamp} - ${message}\n`;
+
+  fs.appendFile('logs.txt', log, (err) => {
+    if (err) {
+      console.error('Error writing to log file');
+    }
+  });
+};
+
+module.exports = { logMessage };
